@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>CHỮ KÝ ĐIỆN TỬ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/dialog.css">
+  <link rel="stylesheet" href="../css/signature.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body style="max-width:1500px;">
+
+<!-- Header -->
+<header class="w3-display-container w3-center">
+  <img src="../icon/banner.jpg" alt="Trulli" width=100% >
+  <div class ="status-profile ">
+    <div class = "container tab-bar">
+      <div class="row ">
+        <div class="col-sm-4 profile-mobile">
+          <input type="radio" id="info" name="radio-group">
+          <label for="info">THÔNG TIN CHUNG</label>
+        </div>
+        <div class="col-sm-4 upload-mobile">
+          <input type="radio" id="upload" name="radio-group">
+          <label for="upload">UPLOAD</label>
+        </div>
+        <div class="col-sm-4 sign-mobile">
+          <input type="radio" id="signContract" name="radio-group" checked>
+          <label for="signContract">KÝ HỢP ĐỒNG</label>
+        </div>
+    </div>
+  </div>
+</div>
+ </header>
+
+    <div class=" w3-white container">
+  <!--Chữ ký điện tử-->
+      <div class="w3-row-padding row" style="margin-top:50px">
+        <h5 class ="col-sm-12 style-label"><img class="icon" src="icon/icon_profile.png">CHỮ KÝ ĐIỆN TỬ</h5>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+          <ul><li class="w3-padding-8 style-label ">Nhập số điện thoại</li></ul>
+        </div>
+        <div class="col-sm-3">
+            <p class="lb-input"><input id="ip-mobile" class="gr-input w3-hover-shadow" type="text" required></p>
+            <p class="lb-note">* Nhập số điện thoại chính chủ</p>
+        </div>
+        <div class="col-sm-3 buttons">
+          <div class="item html">
+            <h6>0</h6>
+            <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle" class="circle_animation" r="15" cy="20" cx="20" stroke-width="4" stroke="#6fdb6f" fill="none"/>
+            </g>
+            </svg>
+          </div>
+          <button class="btn-dk" id="btn-get-otp" >Nhận OTP</button>
+          <button class="btn-dk" id="btn-resend-otp" >Gửi lại OTP</button>
+        </div>
+
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+          <ul><li class="w3-padding-8 style-label ">Nhập OTP</li></ul>
+        </div>
+        <div class="col-sm-3">
+            <p class="lb-input"><input id="lb-sign" class="gr-input w3-hover-shadow" type="text" required></p>
+            <p class ="lb-note">* Nhập mã OTP được gửi về điện thoại</p>
+        </div>
+
+      </div>        
+
+      <div class="w3-row-padding row" style="margin-top:64px">
+        <div class="col-sm-12 buttons">
+          <button type="button" class="btn-dk" id="btn-verify">TẢI LÊN</button>
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/text.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/signature.js"></script>
+</div>
+
+<footer >
+  <div th:replace="/footer :: footer"></div>
+</footer>
+<div id="loader_div" class="loader_div"></div>
+</body>
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+
+  <h1 style="text-align:center;">
+      <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
+    </div>
+  <h1>
+    <div class="head">  
+      <h5 style="margin-top:5px;">Ký hợp đồng thành công</h5>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</html>

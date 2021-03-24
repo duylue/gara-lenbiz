@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>ĐĂNG KÝ GỌI VỐN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css" type="text/css">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css">
+  <link rel="stylesheet" href="../css/dialog.css" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body style="max-width:1500px;">
+
+<!-- Header -->
+<header class="w3-display-container w3-center">
+  <img src="../icon/banner.jpg" alt="Trulli" width=100% >
+  <div class ="status-profile ">
+    <div class = "container tab-bar">
+      <div class="row ">
+        <div class="col-sm-4 profile-mobile">
+          <input type="radio" id="info" name="radio-group" checked>
+          <label for="info">THÔNG TIN CHUNG</label>
+        </div>
+        <div class="col-sm-4 upload-mobile">
+          <input type="radio" id="upload" name="radio-group">
+          <label for="upload">UPLOAD</label>
+        </div>
+        <div class="col-sm-4 sign-mobile">
+          <input type="radio" id="signContract" name="radio-group">
+          <label for="signContract">KÝ HỢP ĐỒNG</label>
+        </div>
+    </div>
+  </div>
+</div>
+ </header>
+
+  <div class=" w3-white container">
+  <!--Thông tin doanh nghiệp-->
+      <div class="w3-row-padding row" style="margin-top:50px">
+        <h5 class ="col-sm-12 style-label"><img class="icon" src="icon/icon_user.png">THÔNG TIN DOANH NGHIỆP/HKD</h5>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label ">Tên doanh nghiệp/HKD</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="fullName" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label ">Số giấy phép kinh doanh</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="idCode" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Năm bắt đầu hoạt động</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="idDate" class="gr-input w3-hover-shadow width-date" type="date" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Doanh số 12 tháng gần nhất VND</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="revenue" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+        
+      </div>
+      <br>
+
+  <!--Thông tin chủ doanh nghiệp,hkd-->
+      <div class="w3-row-padding row">
+        <h5 class ="col-sm-12 style-label"><img class="icon" src="icon/icon_user.png">THÔNG TIN CHỦ DOANH NGHIỆP/HKD</h5>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Họ và tên</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="exFullName" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Ngày tháng năm sinh</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="dateOfBirth" class="gr-input w3-hover-shadow width-date" type="date" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Số CMND/CCCD</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="refIdCode" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Ngày cấp</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="refIdDate" class="gr-input w3-hover-shadow width-date" type="date" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Nơi cấp</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="refIdPlace" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Địa chỉ thường trú</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="address" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Địa chỉ tạm trú</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="relationAddress" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Điện thoại</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="mobileSms" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Email</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="email" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Tên người tham chiếu</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="refName" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">SĐT người tham chiếu</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="phone" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+      </div>
+
+  <!--Nhu cầu vốn huy động-->
+      <div class="w3-row-padding row">
+        <h5 class ="col-sm-12 style-label"><img class="icon" src="icon/money.png">NHU CẦU HUY ĐỘNG VỐN</h5>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Số tiền cần huy động(VND)</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="mrLoanLimit" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-4">
+          <ul><li class="w3-padding-8 style-label">Thời gian huy động(ngày)</li></ul>
+        </div>
+        <div class="col-sm-7">
+            <p><input id="time2rc" class="gr-input w3-hover-shadow" type="text" required></p>
+        </div>
+
+        <div class="col-sm-12 buttons">
+          <button id="register" type="button" class="btn-dk">ĐĂNG KÝ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer >
+  <div th:replace="/footer :: footer"></div>
+</footer>
+
+  <div id="loader_div" class="loader_div"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/text.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+
+  <h1 style="text-align:center;">
+      <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
+    </div>
+  <h1>
+    <div class="head">  
+      <h5 style="margin-top:5px;">Thông tin hồ sơ của bạn đã được gửi thành công</h5>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</html>

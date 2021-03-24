@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>XÁC MINH DANH TÍNH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/dialog.css">
+  <link rel="stylesheet" href="../css/kyc.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body style="max-width:1500px;">
+
+<!-- Header -->
+<header class="w3-display-container w3-center">
+  <img src="../icon/banner.jpg" alt="Trulli" width=100% >
+  <div class ="status-profile ">
+    <div class = "container tab-bar">
+      <div class="row ">
+        <div class="col-sm-4 profile-mobile">
+          <input type="radio" id="info" name="radio-group">
+          <label for="info">THÔNG TIN CHUNG</label>
+        </div>
+        <div class="col-sm-4 upload-mobile">
+          <input type="radio" id="upload" name="radio-group" checked>
+          <label for="upload">UPLOAD</label>
+        </div>
+        <div class="col-sm-4 sign-mobile">
+          <input type="radio" id="signContract" name="radio-group">
+          <label for="signContract">KÝ HỢP ĐỒNG</label>
+        </div>
+    </div>
+  </div>
+</div>
+ </header>
+
+    <div class=" w3-white container">
+  <!--Định danh khách hàng-->
+      <div class="w3-row-padding row" style="margin-top:50px">
+        <h5 class ="col-sm-12 style-label hover"><img class="icon" src="icon/icon_user.png">ĐỊNH DANH KHÁCH HÀNG</h5>
+
+        <div class="col-sm-4 ">
+          <img class="image-up" src="icon/camera.png" id="front_identity" height="200">     
+              <div class="upload-btn-wrapper">
+                <button class="btn-upload">CHỤP ẢNH CMND/CCCD MẶT TRƯỚC</button>
+                <input type="file" id="identity" accept="image/*" capture="camera"/>
+              </div>
+        </div>
+
+        <div class="col-sm-4">
+            <img class="image-up" src="icon/camera.png" id="back_identity" height="200">
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload">CHỤP ẢNH CMND/CCCD MẶT SAU</button>
+                <input type="file" id="backIdentity" accept="image/*" capture="camera"/>
+              </div>
+        </div>
+
+        <div class="col-sm-4">
+            <img class="image-up" src="icon/camera.png" id="selfie" height="200">
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload">CHỤP ẢNH SELFIE</button>
+                <input type="file" id="input-selfie" accept="image/*" capture="camera"/>
+              </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding row" style="margin-top:64px">
+        <div class="col-sm-12 buttons">
+          <button type="button" class="btn-dk" id="upload-kyc" >TẢI LÊN</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer >
+      <div th:replace="/footer :: footer"></div>
+    </footer>
+    <div id="loader_div" class="loader_div"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/text.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/kyc.js"></script>
+</body>
+
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+
+  <h1 style="text-align:center;">
+      <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
+    </div>
+  <h1>
+    <div class="head">  
+      <h5 style="margin-top:5px;">Bạn đã định danh thành công</h5>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</html>

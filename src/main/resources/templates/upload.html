@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>UPLOAD THÔNG TIN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/dialog.css">
+  <link rel="stylesheet" href="../css/upload.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<body style="max-width:1500px;">
+
+<!-- Header -->
+<header class="w3-display-container w3-center">
+  <img src="../icon/banner.jpg" alt="Trulli" width=100% >
+  <div class ="status-profile ">
+    <div class = "container tab-bar">
+      <div class="row ">
+        <div class="col-sm-4 profile-mobile">
+          <input type="radio" id="info" name="radio-group">
+          <label for="info">THÔNG TIN CHUNG</label>
+        </div>
+        <div class="col-sm-4 upload-mobile">
+          <input type="radio" id="upload" name="radio-group" checked>
+          <label for="upload">UPLOAD</label>
+        </div>
+        <div class="col-sm-4 sign-mobile">
+          <input type="radio" id="signContract" name="radio-group">
+          <label for="signContract">KÝ HỢP ĐỒNG</label>
+        </div>
+    </div>
+  </div>
+</div>
+ </header>
+
+    <div class=" w3-white container">
+  <!--Tải lên hồ sơ pháp lý-->
+      <div class="w3-row-padding row" style="margin-top:50px">
+        <h5 class ="col-sm-12 style-label hover"><img class="icon" src="icon/icon_user.png">TẢI LÊN HỒ SƠ PHÁP LÝ</h5>
+
+        <div class="col-sm-6 ">
+          <p class="image" id="image-dkkd"></p>
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP ĐĂNG KÝ KINH DOANH</p></button>
+                <input type="file" id="upload-dkkd" accept="image/*" />
+              </div>
+              <br/>
+
+              <p class="image" id="image-cmnd"></p>
+              <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP CHỨNG MINH THƯ NHÂN DÂN</p></button>
+                <input type="file" id="upload-cmnd" accept="image/*"/>
+              </div>
+        </div>
+
+        <div class="col-sm-6">
+          <p class="image" id="image-shk"></p>
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP SỔ HỘ KHẨU</p></button>
+                <input type="file" id="upload-shk" accept="image/*" />
+              </div>
+              <br/>
+              <p class="image" id="image-sim"></p>
+              <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP TIN NHẮN SIM CHÍNH CHỦ</p></button>
+                <input type="file" id="upload-sim" accept="image/*"/>
+                <p class ="up-note">* Soạn tin: TTTB gửi 1414</p>
+              </div>
+        </div>
+
+      </div>
+
+  <!--Nhập số hồ sơ bồi thường-->
+      <div class="w3-row-padding row">
+        <h5 class ="col-sm-12 style-label"><img class="icon" src="icon/icon_user.png">NHẬP SỐ HỒ SƠ BỒI THƯỜNG</h5>
+
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <ul><li class="w3-padding-8 style-label ">Nhập mã số</li></ul>
+        </div>
+        <div class="col-sm-6">
+            <p class="lb-input"><input id="maHsbt" class="gr-input w3-hover-shadow" type="text" required></p>
+            <p class ="up-note">* Nhập liên tục số hồ sơ bồi thường cách nhau bởi dấu phẩy</p>
+            <p class ="up-note">Ví dụ: 0001,0005,0008</p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding row" style="margin-top:50px">
+        <div class="col-sm-12 buttons">
+          <button  id="btn-upfile" type="button" class="btn-dk">TẢI LÊN</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer >
+      <div th:replace="/footer :: footer"></div>
+    </footer>
+    <div id="loader_div" class="loader_div"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/text.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/upload.js"></script>
+</body>
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+
+  <h1 style="text-align:center;">
+      <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
+    </div>
+  <h1>
+    <div class="head">  
+      <h5 style="margin-top:5px;">Thông tin hồ sơ đã được gửi đi thành công</h5>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</html>

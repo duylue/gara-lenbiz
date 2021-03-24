@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spring Web Demo</title>
+
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <div class="wrapper">
+      <div class="login">
+        <header class="login__header opt-pt--40">
+          <div class="login__logo opt-block--center">
+            <img src="/images/svg/logo-white.svg" />
+          </div>
+          <h1 class="login__ttl opt-mt--20 opt-al--center">Spring Web Demo</h1>
+        </header>
+        <div class="opt-pt--40">
+        <div class="messeges--error" id="messges-error">
+          <span></span>
+        </div>
+          <div class="login__form__inner opt-block--center">
+            <div class="field">
+              <label class="field__label has-icon" id="title-email" style="position:relative; top:40px">Email</label>
+              <div class="field__inputbox">
+                <input class="input input--email" type="email" id="email" />
+              </div>
+              <div class="field__caption">
+                <p class="field__caption__note"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label has-icon" id="title-password" style="position:relative; top:40px">Password</label>
+              <div class="field__inputbox">
+                <input class="input input--password" type="password" id="password" />
+              </div>
+              <div class="field__caption">
+                <p class="field__caption__note"></p>
+              </div>
+            </div>
+            <div class="opt-mt--12">
+              <input type="button" class="btn btn--large" value="Login" id="btn-login" />
+            </div>
+            <div class="opt-mt--40 opt-al--center">
+              <a href="javascript:void(0)" class="link send-password" id="lbl_forgot_pass">Forgot Password</a>
+            </div>
+          </div>
+          <small class="copyright copyright-safari"><span class="safari_only-coppyright">&copy;</span> Wellcome to  NodeJs .</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <script src="/js/text.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+
+</html>

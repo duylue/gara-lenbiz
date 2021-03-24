@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>UPLOAD THÔNG TIN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/dialog.css">
+  <link rel="stylesheet" href="../css/upload.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body style="max-width:1500px;">
+
+<!-- Header -->
+<header class="w3-display-container w3-center">
+  <img src="../icon/banner.jpg" alt="Trulli" width=100% >
+  <div class ="status-profile ">
+    <div class = "container tab-bar">
+      <div class="row ">
+        <div class="col-sm-4">
+          <input type="radio" id="info" name="radio-group">
+          <label for="info">THÔNG TIN CHUNG</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="radio" id="upload" name="radio-group" checked>
+          <label for="upload">UPLOAD</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="radio" id="signContract" name="radio-group">
+          <label for="signContract">KÝ HỢP ĐỒNG</label>
+        </div>
+    </div>
+  </div>
+</div>
+ </header>
+
+    <div class=" w3-white container">
+  <!--Tải lên hồ sơ pháp lý-->
+      <div class="w3-row-padding row" style="margin-top:64px">
+        <h4 class ="col-sm-12 style-label hover"><img class="icon" src="icon/icon_user.png">TẢI LÊN HỒ SƠ PHÁP LÝ</h4>
+
+        <div class="col-sm-6 ">
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP ĐĂNG KÝ KINH DOANH</p></button>
+                <input type="file" id="myfile" accept="image/*" />
+              </div>
+              <br/>
+              <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP CHỨNG MINH THƯ NHÂN DÂN</p></button>
+                <input type="file" id="myfile" accept="image/*"/>
+              </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP SỔ HỘ KHẨU</p></button>
+                <input type="file" id="myfile" accept="image/*" />
+              </div>
+              <br/>
+              <div class="upload-btn-wrapper">
+                <button class="btn-upload"><img class="icon-upload" src="icon/icon_upload.png"><p class="label-upload">ẢNH CHỤP TIN NHẮN SIM CHÍNH CHỦ</p></button>
+                <input type="file" id="myfile" accept="image/*"/>
+                <p class ="up-note">* Soạn tin: TTTB gửi 1414</p>
+              </div>
+        </div>
+
+      </div>
+
+  <!--Nhập số hồ sơ bồi thường-->
+      <div class="w3-row-padding row" style="margin-top:64px">
+        <h4 class ="col-sm-12 style-label"><img class="icon" src="icon/icon_user.png">NHẬP SỐ HỒ SƠ BỒI THƯỜNG</h4>
+
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <ul><li class="w3-padding-16 style-label ">Nhập mã số</li></ul>
+        </div>
+        <div class="col-sm-6">
+            <p class="lb-input"><input class="gr-input w3-hover-shadow" type="text" required></p>
+            <p class ="up-note">* Nhập liên tục số hồ sơ bồi thường cách nhau bởi dấu phẩy</p>
+            <p class ="up-note">Ví dụ: 0001,0005,0008</p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding row" style="margin-top:64px">
+        <div class="col-sm-12 buttons">
+          <button type="button" class="btn-dk" data-toggle="modal" data-target="#success_tic">TẢI LÊN</button>
+        </div>
+      </div>
+
+    </div>
+
+<footer >
+    <div class="lb-footer">
+      <div class="container">
+        <div class="w3-row-padding row" style="padding-top:50px; padding-bottom: 50px;">
+      
+          <div class="col-sm-4">
+            <h5 class="w3-padding-16 style-footer ">Chúng tôi là ai</h5>
+            <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/ve-chung-toi/">Về chúng tôi</a></li>
+            <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/co-che-hoat-dong/">Cơ chế hoạt động</a></li>
+            <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/tuyen-dung/">Tuyển dụng</a></li>
+          </div>
+          <div class="col-sm-4">
+              <h5 class="w3-padding-16 style-footer ">Dịch vụ</h5>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/ve-chung-toi/">Tài trợ hóa đơn</a>
+          </div>
+      
+          <div class="col-sm-4">
+              <h5 class="w3-padding-16 style-footer ">Chính sách</h5>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/cong-bo-rui-ro/">Công bố rủi ro</a></li>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/dieu-khoan-giao-dich/">Điều khoản giao dịch</a></li>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/wp-content/uploads/2020/07/hd-agent-lendbiz-int-sme-hkd_-1.pdf">HĐ hợp tác phát triển Doanh Nghiệp</a></li>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/wp-content/uploads/2020/07/hd-agent-lendbiz-int-ndt.pdf">HĐ hợp tác phát triển Nhà đầu tư</a></li>
+              <li class="type-none"><a class="margin-16 " target="_blank" href="https://lendbiz.vn/wp-content/uploads/2020/07/thoa-thuan-nhan-chuyen-quyen-nha-dau-tu-mua-rev-1-docx.pdf">Thỏa thuận nhận chuyển quyền</a></li>
+          </div>
+  </div>
+  </footer>
+</body>
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+
+  <h1 style="text-align:center;">
+      <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
+    </div>
+  <h1>
+    <div class="head">  
+      <h5 style="margin-top:5px;">Hồ sơ bạn đã gửi thành công</h5>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</html>

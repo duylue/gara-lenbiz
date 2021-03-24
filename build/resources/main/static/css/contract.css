@@ -1,0 +1,74 @@
+.btn-search {
+    display: inline-block;
+    background-color: #f7a23b;
+    padding: 2px 12px;
+    border-radius: 14px;
+    border: 1px solid #a75e04;
+    border-bottom-width: 3px;
+}
+.ul-label{
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+.read-label {
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #00007a;
+}
+.icon-search {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#disagree {
+    background-color: white;
+    color: #00007a;
+    border: 1px solid #00007a;
+}
+
+@media only screen and (max-width: 600px) {
+    body {font-size: 12px !important;}
+ 
+    h5 {
+        font-size: 13px !important;
+    }
+ 
+    .upload-mobile {
+      display: inline;
+      padding-top: 3.5%;
+    }
+    .sign-mobile {
+        display: none;
+    }
+  
+    .profile-mobile {
+      display: none;
+    }
+    .col-5-mobile {
+        width: 30% !important;
+    }
+    .col-6-mobile {
+        width: 70% !important;
+        font-size: 10px;
+    }
+    .btn-mobile {
+        font-size: 10px !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+    .col-btn-mobile {
+        width: 40% !important;
+    }
+    .col-btn-disagree {
+        width: 50% !important;
+    }
+    .btn-disagree {
+        font-size: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .col-space-mobile {
+        width: 10% !important;
+    }
+  }
